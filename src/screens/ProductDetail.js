@@ -33,12 +33,13 @@ const ProductDetail = ({ route }) => {
           <Text style={styles.text}>{product.quantityPerUnit}</Text>
 
           <Text style={styles.label}>Discounted:</Text>
-          <Text style={styles.label}>Quantity Per Unit:</Text>
-{product.discounted ? (
+          {product.discounted ? (
   <Text>{product.discounted} (Discounted)</Text>
 ) : (
   <Text >No Sale</Text>
 )}
+         
+
 
 
 
